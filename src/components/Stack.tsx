@@ -4,6 +4,7 @@ import javaIcon from '../assets/svg/java.svg'
 import springIcon from '../assets/svg/spring.svg'
 import postgresqlIcon from '../assets/svg/postgresql.svg'
 import { TechTag } from './TechTag'
+import { SectionTitle } from './SectionTitle'
 
 const skillsData = [
   { name: 'React', url: 'https://react.dev/', icon: reactIcon },
@@ -15,11 +16,17 @@ const skillsData = [
 
 export function Stack() {
   return (
-    <section className="mt-16 flex flex-col gap-4">
-      <h2 className="font-['DepartureMono'] text-2xl text-gray-900"># Stack</h2>
-      <div className="flex flex-wrap gap-2">
+    <section className="mt-20 flex flex-col gap-6">
+      <SectionTitle title="Compétences" />
+      <div className="flex flex-wrap gap-3">
         {skillsData.map((skill, index) => (
-          <TechTag key={index} tech={skill.name} url={skill.url} icon={skill.icon} className='text-lg'/>
+          <TechTag
+            key={index}
+            tech={skill.name}
+            url={skill.url}
+            icon={skill.icon}
+            className="text-base sm:text-lg"
+          />
         ))}
       </div>
     </section>

@@ -18,6 +18,6 @@
     "name": "Application de messagerie",
     "description": "Application de messagerie en ligne, basée sur une API Java/Jakarta EE en utilisant le modèle MVC, déployée sur Tomcat.",
     "link": "https://github.com/StazzCode/SAE_WEB_ChatApp",
-    "tech": ["Java", "Jakarta EE", "REST"]
+    "tech": ["Java", "Jakarta EE"]
   }
 ]

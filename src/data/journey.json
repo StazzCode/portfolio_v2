@@ -4,7 +4,8 @@
     "company": "Infotel",
     "role": "Stagiaire développeur",
     "description": "Développement d'un projet interne, lié au Green-IT.",
-    "type": "school"
+    "type": "school",
+    "tech": ["Spring-Boot", "Angular"]
   },
   {
     "year": "2025",
@@ -12,6 +13,7 @@
     "url": "https://qalmo.fr",
     "role": "Stagiaire développeur React-Native",
     "description": "Mise à jour de l'application mobile de qalmo et développement d'une nouvelle fonctionnalité",
-    "type": "school"
+    "type": "school",
+    "tech": ["TypeScript", "React-Native", "Redux"]
   }
 ]

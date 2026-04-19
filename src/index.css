@@ -1,5 +1,12 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-cream: #fff8f0;
+  --color-warm-white: #faf7f2;
+  --color-link-blue: #256eff;
+  --color-black: #090909;
+}
+
 @font-face {
   font-family: 'DepartureMono';
   src: url('./assets/fonts/DepartureMono-Regular.otf');
@@ -9,4 +16,5 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  background-color: var(--color-cream);
 }

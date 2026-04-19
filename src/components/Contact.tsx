@@ -11,10 +11,10 @@ const iconMap: Record<string, string> = {
 
 export function Contact() {
   return (
-    <section className="mt-16 mb-8 flex flex-col gap-4">
-      <div className="flex flex-row gap-4">
+    <section className="mt-20 mb-10 flex flex-col gap-4">
+      <div className="flex flex-col gap-4 sm:flex-row sm:gap-8">
         {linksData.map((link, index) => (
-          <div key={index} className="grid grid-cols-[2rem_1fr] items-center gap-2">
+          <div key={index} className="flex items-center gap-2.5">
             <img
               src={iconMap[link.icon.replace('.svg', '')]}
               alt={link.name}
@@ -24,7 +24,7 @@ export function Contact() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base text-gray-900 hover:text-blue-600 hover:underline"
+              className="hover:text-link-blue text-base hover:underline"
             >
               {link.handle}
             </a>
