@@ -10,21 +10,21 @@ export function Projects() {
           <div key={index} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 sm:gap-8">
             <span className="text-sm text-gray-500">{project.year}</span>
             <div className="flex flex-col gap-2">
-              <div className="inline-flex w-fit items-center gap-1">
+              <div className="group inline-flex w-fit items-center gap-1 hover:text-blue-600">
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base text-gray-900 hover:underline"
+                  className="text-base group-hover:underline"
                 >
                   {project.name}
                 </a>
-                <span className="font-['DepartureMono'] text-lg text-gray-900">↗</span>
+                <span className="font-['DepartureMono'] text-lg">↗</span>
               </div>
               <p className="text-sm text-gray-500">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech, techIndex) => (
-                  <TechTag key={techIndex} tech={tech} />
+                  <TechTag key={techIndex} tech={tech} className="text-xs" />
                 ))}
               </div>
             </div>

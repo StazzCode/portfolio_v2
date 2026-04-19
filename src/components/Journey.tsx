@@ -9,8 +9,23 @@ export function Journey() {
           <div key={index} className="grid grid-cols-[7rem_1fr] items-baseline gap-4 sm:gap-8">
             <span className="text-sm text-gray-500">{item.year}</span>
             <div className="flex flex-col gap-1">
-              <span className="text-base text-gray-900">{item.company}</span>
+              {item.url ? (
+                <div className="group inline-flex w-fit items-center gap-1 hover:text-blue-600">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base group-hover:underline"
+                >
+                  {item.company}
+                </a>
+                <span className="font-['DepartureMono'] text-lg">↗</span>
+                </div>
+              ) : (
+                <span className="text-base text-gray-900">{item.company}</span>
+              )}
               <span className="text-sm text-gray-500">{item.role}</span>
+              <span className="text-sm text-gray-500">{item.description}</span>
             </div>
           </div>
         ))}

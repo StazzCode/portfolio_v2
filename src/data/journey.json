@@ -1,14 +1,17 @@
 [
   {
-    "year": "2025 - Present",
-    "company": "Company B",
-    "role": "Full-Stack Developer Intern",
+    "year": "2026 - Present",
+    "company": "Infotel",
+    "role": "Stagiaire développeur",
+    "description": "Développement d'un projet interne, lié au Green-IT.",
     "type": "school"
   },
   {
-    "year": "2024",
-    "company": "Company A",
-    "role": "Frontend Developer Intern",
+    "year": "2025",
+    "company": "qalmo",
+    "url": "https://qalmo.fr",
+    "role": "Stagiaire développeur React-Native",
+    "description": "Mise à jour de l'application mobile de qalmo et développement d'une nouvelle fonctionnalité",
     "type": "school"
   }
 ]
