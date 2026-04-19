@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Project Alpha",
+    "description": "A modern web application built with React and Node.js",
+    "link": "https://github.com/",
+    "tech": ["React", "Node.js", "PostgreSQL"]
+  },
+  {
+    "name": "Project Beta",
+    "description": "Real-time collaboration tool with WebSocket integration",
+    "link": "https://github.com/",
+    "tech": ["Vue.js", "Express", "Socket.io"]
+  },
+  {
+    "name": "Project Gamma",
+    "description": "E-commerce dashboard with analytics and reporting",
+    "link": "https://github.com/",
+    "tech": ["Next.js", "TypeScript", "Prisma"]
+  }
+]
